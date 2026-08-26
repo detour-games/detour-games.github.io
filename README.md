@@ -1,3 +1,3 @@
 # DETOUR
 
-Static GitHub Pages site for DETOUR / PIN DOU!.
+Official website for DETOUR / PIN DOU!.
