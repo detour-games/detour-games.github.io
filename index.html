@@ -72,44 +72,50 @@
     </a>
     <nav class="nav">
       <a href="#games" data-i18n="nav_games">游戏</a>
-      <a href="#features" data-i18n="nav_features">特色</a>
       <a href="#journal" data-i18n="nav_journal">开发日志</a>
     </nav>
     <button class="lang" id="langButton" aria-label="Switch language">EN / 中</button>
   </header>
 
   <main id="top">
-    <section class="hero">
+    
+<section class="hero">
       <div class="hero-grid"></div>
+
       <div class="hero-copy reveal">
         <p class="eyebrow">ELSEWHERE</p>
-        <h1>
-          <span data-i18n="hero_title">Games</span>
-          <span class="sub" data-i18n="hero_sub">Independent titles on Steam.</span>
-        </h1>
+        <h1 class="pindou-hero-title" data-i18n="hero_title">拼豆！</h1>
+        <p class="pindou-hero-sub" data-i18n="hero_sub">A relaxing 3D fuse-bead game.</p>
         <p class="hero-text" data-i18n="hero_text">
-          查看《拼豆！》《漂流瓶盖》《沙雕之路》，以及后续新作与开发记录。
+          挑选喜欢的图案，一颗一颗放下拼豆，完成、熨烫并收藏属于自己的作品。
         </p>
         <div class="hero-actions">
-          <a class="button primary magnetic" href="#games" data-i18n="hero_cta_main">查看游戏</a>
-          <a class="button ghost magnetic" href="#journal" data-i18n="hero_cta_secondary">查看开发日志</a>
+          <a class="button primary magnetic" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer" data-i18n="hero_cta_main">打开 Steam 页面</a>
+          <a class="button ghost magnetic" href="#games" data-i18n="hero_cta_secondary">查看其他游戏</a>
         </div>
       </div>
 
       <div class="hero-showcase reveal delay-1">
-        <div class="glass-card hero-logo-card tilt-card">
-          <img src="assets/elsewhere-logo.png" alt="Elsewhere" class="hero-logo-full" />
+        <div class="glass-card pindou-hero-card tilt-card">
+          <div class="pindou-hero-grid"></div>
+          <div class="pindou-hero-label">PIN DOU!</div>
+          <div class="pindou-heart" id="pindouHeart"></div>
+          <div class="pindou-hero-meta">
+            <span>3D</span>
+            <span data-i18n="hero_meta">STEAM / 开发中</span>
+          </div>
         </div>
       </div>
 
-      <a class="scroll-cue" href="#games" aria-label="Scroll to content"><span></span></a>
+      <a class="scroll-cue" href="#games" aria-label="Scroll to games"><span></span></a>
     </section>
+
 
     <section class="section games" id="games">
       <div class="section-head reveal">
         <div>
           <p class="eyebrow" data-i18n="games_kicker">GAMES</p>
-          <h2 data-i18n="games_title">游戏作品</h2>
+          <h2 data-i18n="games_title">其他游戏</h2>
         </div>
       </div>
 
@@ -178,40 +184,7 @@
         </a>
       </div>
     </section>
-
-    <section class="section features" id="features">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow" data-i18n="features_kicker">FEATURES</p>
-          <h2 data-i18n="features_title">三个游戏，<br/>同等展示。</h2>
-        </div>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card reveal">
-          <span class="feature-no">01</span>
-          <h3 data-i18n="f1_title">直接进入 Steam</h3>
-          <p data-i18n="f1_body">三张游戏卡片都可以整张点击，直接打开各自的 Steam 商店页面。</p>
-        </article>
-        <article class="feature-card reveal delay-1">
-          <span class="feature-no">02</span>
-          <h3 data-i18n="f2_title">统一展示结构</h3>
-          <p data-i18n="f2_body">不再让某一款游戏压过其他作品，三款游戏都按同等分量展示。</p>
-        </article>
-        <article class="feature-card reveal">
-          <span class="feature-no">03</span>
-          <h3 data-i18n="f3_title">轻量而清楚</h3>
-          <p data-i18n="f3_body">保留清爽配色和动效，同时让页面信息更直接，更像一个真正的作品主页。</p>
-        </article>
-        <article class="feature-card reveal delay-1">
-          <span class="feature-no">04</span>
-          <h3 data-i18n="f4_title">持续更新</h3>
-          <p data-i18n="f4_body">开发日志区域会继续保留，后续可以继续往里面补充新内容和新游戏。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section journal" id="journal">
+<section class="section journal" id="journal">
       <div class="section-head reveal">
         <div>
           <p class="eyebrow" data-i18n="journal_kicker">DEV JOURNAL</p>
@@ -238,14 +211,15 @@
       </div>
     </section>
 
-    <section class="closing">
-      <div class="closing-card reveal tilt-card">
+    
+<section class="closing">
+      <div class="closing-card reveal">
         <p class="eyebrow">ELSEWHERE</p>
-        <h2 data-i18n="closing_title">Elsewhere</h2>
-        <p data-i18n="closing_text">Games on Steam, with room for more.</p>
+        <p class="closing-simple" data-i18n="closing_text">更多游戏和开发记录会继续更新。</p>
         <a class="button ghost magnetic" href="#top" data-i18n="back_top">回到顶部</a>
       </div>
     </section>
+
   </main>
 
   <footer>

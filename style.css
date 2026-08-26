@@ -262,3 +262,125 @@ footer>div:last-child{text-align:right}
   .journal-arrow{grid-column:2;grid-row:1/3}
   .feature-card h3{font-size:22px}
 }
+
+
+/* ===== v8 restrained hero ===== */
+.nav{
+  gap:36px;
+}
+.brand-logo{
+  height:30px;
+}
+
+.pindou-hero-title{
+  margin:0;
+  font-size:clamp(82px,12vw,178px);
+  line-height:.82;
+  letter-spacing:-.075em;
+  font-weight:900;
+  color:var(--deep);
+}
+.pindou-hero-sub{
+  margin:18px 0 0;
+  color:#668195;
+  font-size:clamp(18px,2vw,28px);
+  font-weight:700;
+  letter-spacing:-.035em;
+}
+.pindou-hero-card{
+  position:relative;
+  min-height:520px;
+  overflow:hidden;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:
+    radial-gradient(circle at 26% 18%,rgba(255,255,255,.76),transparent 25%),
+    linear-gradient(145deg,#dff9ee 0%,#d9f2ff 40%,#e6dcff 72%,#ffdce9 100%);
+}
+.pindou-hero-grid{
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(64,96,116,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(64,96,116,.07) 1px,transparent 1px);
+  background-size:38px 38px;
+}
+.pindou-hero-label,
+.pindou-hero-meta{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  color:#678397;
+  font-size:10px;
+  letter-spacing:.16em;
+  font-weight:800;
+}
+.pindou-heart{
+  width:min(330px,80%);
+  aspect-ratio:1;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(13,1fr);
+  gap:6px;
+  position:relative;
+  z-index:2;
+}
+.hero-bead{
+  aspect-ratio:1;
+  border-radius:50%;
+  background:rgba(255,255,255,.82);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.9),0 8px 18px rgba(96,138,160,.14);
+}
+.hero-bead.active{
+  background:linear-gradient(145deg,#ffc6d8,#f4a9c2);
+}
+.hero-bead.mint{
+  background:linear-gradient(145deg,#b9efde,#99dfc9);
+}
+
+.games .section-head h2{
+  font-size:clamp(42px,5vw,78px);
+}
+.games{
+  padding-top:70px;
+}
+
+/* remove brand-heavy closing */
+.closing{
+  min-height:320px;
+  padding:30px 6vw 80px;
+}
+.closing-card{
+  width:min(680px,100%);
+  padding:30px 34px;
+}
+.closing-simple{
+  margin:0 0 24px;
+  color:#617385;
+  line-height:1.8;
+  font-size:16px;
+}
+
+@media (max-width:960px){
+  .pindou-hero-card{
+    min-height:430px;
+  }
+}
+@media (max-width:540px){
+  .brand-logo{
+    height:24px;
+  }
+  .pindou-hero-title{
+    font-size:clamp(72px,20vw,108px);
+  }
+  .pindou-hero-card{
+    min-height:360px;
+  }
+  .pindou-heart{
+    gap:4px;
+  }
+}

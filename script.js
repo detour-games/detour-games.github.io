@@ -1,41 +1,21 @@
 const translations = {
   zh: {
     nav_games:"游戏", nav_games_footer:"游戏", nav_features:"特色", nav_journal:"开发日志", nav_journal_footer:"开发日志",
-    hero_title:"Games", hero_sub:"Independent titles on Steam.",
-    hero_text:"查看《拼豆！》《漂流瓶盖》《沙雕之路》，以及后续新作与开发记录。",
-    hero_cta_main:"查看游戏", hero_cta_secondary:"查看开发日志",
-    games_kicker:"GAMES", games_title:"游戏作品",
+    hero_title:"拼豆！", hero_sub:"A relaxing 3D fuse-bead game.", hero_text:"挑选喜欢的图案，一颗一颗放下拼豆，完成、熨烫并收藏属于自己的作品。", hero_cta_main:"打开 Steam 页面", hero_cta_secondary:"查看其他游戏", hero_meta:"STEAM / 开发中",
+    games_kicker:"GAMES", games_title:"其他游戏",
     g1_title:"拼豆！", g1_desc:"一款轻松治愈的 3D 拼豆游戏。挑选图案、放下拼豆、完成熨烫并收藏作品，也可以上传自己的图片制作拼豆图纸。", g1_tag1:"轻松", g1_tag2:"创作", g1_tag3:"治愈",
     g2_title:"漂流瓶盖", g2_desc:"选择一个瓶盖，看它在水流与各种场景中和其他瓶盖比赛。轻松、物理模拟，也有一点完全交给运气的紧张感。", g2_tag1:"休闲", g2_tag2:"竞速", g2_tag3:"物理",
     g3_title:"沙雕之路", g3_desc:"为了买一份海蜇出门，结果一路穿过沙雕大陆与多个次元。以好奇心、喜剧故事和冒险探索驱动的公路旅行。", g3_tag1:"冒险", g3_tag2:"角色扮演", g3_tag3:"欢乐", g3_tag4:"探索",
-    features_kicker:"FEATURES", features_title:"三个游戏，<br/>同等展示。",
-    f1_title:"直接进入 Steam", f1_body:"三张游戏卡片都可以整张点击，直接打开各自的 Steam 商店页面。",
-    f2_title:"统一展示结构", f2_body:"不再让某一款游戏压过其他作品，三款游戏都按同等分量展示。",
-    f3_title:"轻量而清楚", f3_body:"保留清爽配色和动效，同时让页面信息更直接，更像一个真正的作品主页。",
-    f4_title:"持续更新", f4_body:"开发日志区域会继续保留，后续可以继续往里面补充新内容和新游戏。",
-    journal_kicker:"DEV JOURNAL", journal_title:"开发日志",
-    j1_title:"Elsewhere 网站整理中", j1_body:"调整为更清楚的游戏主页结构，统一展示当前作品与开发记录。",
-    j2_title:"三款游戏已加入主页", j2_body:"《拼豆！》《漂流瓶盖》《沙雕之路》现在都可以从主页直接进入 Steam 页面。",
-    closing_title:"Elsewhere", closing_text:"Games on Steam, with room for more.", back_top:"回到顶部"
+    closing_text:"更多游戏和开发记录会继续更新。", back_top:"回到顶部"
   },
   en: {
     nav_games:"Games", nav_games_footer:"Games", nav_features:"Features", nav_journal:"Dev Journal", nav_journal_footer:"Dev Journal",
-    hero_title:"Games", hero_sub:"Independent titles on Steam.",
-    hero_text:"Explore PIN DOU!, Drifting Bottle Cap, Road of Absurdity, and future titles with development updates.",
-    hero_cta_main:"View games", hero_cta_secondary:"View dev journal",
-    games_kicker:"GAMES", games_title:"Games",
+    hero_title:"PIN DOU!", hero_sub:"A relaxing 3D fuse-bead game.", hero_text:"Pick a pattern, place each bead one by one, iron the finished piece, and build a collection of your own.", hero_cta_main:"Open Steam page", hero_cta_secondary:"View other games", hero_meta:"STEAM / IN DEVELOPMENT",
+    games_kicker:"GAMES", games_title:"Other games",
     g1_title:"PIN DOU!", g1_desc:"A relaxing 3D fuse-bead game. Pick a pattern, place each bead, finish the piece, and build a collection of your own. You can also upload your own images and turn them into bead patterns.", g1_tag1:"COZY", g1_tag2:"CREATIVE", g1_tag3:"RELAXING",
     g2_title:"Drifting Bottle Cap", g2_desc:"Pick a bottle cap and watch it race through water-driven courses. A casual physics simulation where luck can still make every run tense.", g2_tag1:"CASUAL", g2_tag2:"RACING", g2_tag3:"PHYSICS",
     g3_title:"Road of Absurdity", g3_desc:"A trip to buy jellyfish turns into a journey across an absurd continent and multiple dimensions, driven by curiosity, comedy and exploration.", g3_tag1:"ADVENTURE", g3_tag2:"RPG", g3_tag3:"FUNNY", g3_tag4:"EXPLORATION",
-    features_kicker:"FEATURES", features_title:"Three games,<br/>equal weight.",
-    f1_title:"Direct Steam access", f1_body:"Every game card is fully clickable and opens its own Steam store page.",
-    f2_title:"A unified structure", f2_body:"No single game dominates the page now. All three titles are presented with equal weight.",
-    f3_title:"Light and clear", f3_body:"The page keeps its fresh palette and motion, while becoming more straightforward as a game homepage.",
-    f4_title:"Room to grow", f4_body:"The dev journal stays in place, ready for more updates and future titles.",
-    journal_kicker:"DEV JOURNAL", journal_title:"Dev Journal",
-    j1_title:"The Elsewhere site is being refined", j1_body:"The homepage structure is being reorganized to present the games and updates more clearly.",
-    j2_title:"Three games are now on the homepage", j2_body:"PIN DOU!, Drifting Bottle Cap, and Road of Absurdity can now all be opened directly from the homepage.",
-    closing_title:"Elsewhere", closing_text:"Games on Steam, with room for more.", back_top:"Back to top"
+    closing_text:"More games and development updates will be added here.", back_top:"Back to top"
   }
 };
 
@@ -58,6 +38,34 @@ langButton.addEventListener("click", () => {
   applyLang();
 });
 applyLang();
+
+
+// PIN DOU! hero heart
+const heartPattern = [
+  "0001100011000",
+  "0011110111100",
+  "0111111111110",
+  "1111111111111",
+  "1111111111111",
+  "0111111111110",
+  "0111111111110",
+  "0011111111100",
+  "0001111111000",
+  "0000111110000",
+  "0000011100000",
+  "0000001000000",
+  "0000000000000"
+];
+const pindouHeart = document.getElementById("pindouHeart");
+if (pindouHeart) {
+  heartPattern.join("").split("").forEach((v, i) => {
+    const dot = document.createElement("span");
+    dot.className = "hero-bead" + (v === "1" ? " active" : "");
+    if ([17, 35, 73].includes(i)) dot.classList.add("mint");
+    pindouHeart.appendChild(dot);
+  });
+}
+
 
 const obs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
