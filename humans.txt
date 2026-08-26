@@ -1,8 +1,7 @@
-DETOUR
-Independent game development.
+Elsewhere
+Official game website.
 
-Current game:
-PIN DOU! / 拼豆！
-
-Website:
-https://detour-games.github.io/
+Games:
+PIN DOU!
+Drifting Bottle Cap
+Road of Absurdity

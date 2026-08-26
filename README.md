@@ -1,3 +1,3 @@
-# DETOUR
+# Elsewhere
 
 Official game website.

@@ -3,43 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#f6fbff" />
-  <meta name="description" content="DETOUR 游戏主页：查看《拼豆！》《漂流瓶盖 Drifting Bottle Cap》《沙雕之路》的游戏介绍、Steam 商店入口与开发日志。" />
-  <meta name="keywords" content="DETOUR, 拼豆, 拼豆游戏, 漂流瓶盖, Drifting Bottle Cap, 沙雕之路, Steam, 独立游戏, indie game, cozy game" />
+  <meta name="theme-color" content="#f7fbff" />
+  <meta name="description" content="Elsewhere 游戏主页：查看《拼豆！》《漂流瓶盖 Drifting Bottle Cap》《沙雕之路》的游戏介绍、Steam 商店入口与开发日志。" />
+  <meta name="keywords" content="Elsewhere, 拼豆, 漂流瓶盖, Drifting Bottle Cap, 沙雕之路, Steam, 独立游戏, indie game" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="author" content="DETOUR" />
-
+  <meta name="author" content="Elsewhere" />
   <link rel="canonical" href="https://detour-games.github.io/" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="DETOUR" />
-  <meta property="og:title" content="DETOUR — 拼豆！" />
-  <meta property="og:description" content="DETOUR 游戏主页：拼豆！、漂流瓶盖、沙雕之路。" />
+  <meta property="og:site_name" content="Elsewhere" />
+  <meta property="og:title" content="Elsewhere — Games" />
+  <meta property="og:description" content="Elsewhere 游戏主页：拼豆！、漂流瓶盖、沙雕之路。" />
   <meta property="og:url" content="https://detour-games.github.io/" />
   <meta property="og:locale" content="zh_CN" />
-
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="DETOUR — 拼豆！" />
-  <meta name="twitter:description" content="一款轻松治愈的 3D 拼豆游戏。" />
-
-  <title>DETOUR — 拼豆！ | 3D 拼豆游戏</title>
+  <meta name="twitter:title" content="Elsewhere — Games" />
+  <meta name="twitter:description" content="Elsewhere 游戏主页。" />
+  <title>Elsewhere — Games</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
-        "name": "DETOUR",
+        "name": "Elsewhere",
         "url": "https://detour-games.github.io/"
       },
       {
         "@type": "VideoGame",
         "name": "拼豆！",
         "alternateName": "PIN DOU!",
-        "url": "https://detour-games.github.io/",
         "sameAs": "https://store.steampowered.com/app/5177970/",
         "gamePlatform": "PC",
         "applicationCategory": "Game",
@@ -50,7 +44,6 @@
         "name": "漂流瓶盖 Drifting Bottle Cap",
         "sameAs": "https://store.steampowered.com/app/2827310/",
         "gamePlatform": "PC",
-        "datePublished": "2024-03-29",
         "applicationCategory": "Game",
         "description": "一款水流物理模拟竞速游戏。"
       },
@@ -59,7 +52,6 @@
         "name": "沙雕之路",
         "sameAs": "https://store.steampowered.com/app/1092590/",
         "gamePlatform": "PC",
-        "datePublished": "2019-10-30",
         "applicationCategory": "Game",
         "description": "一部以好奇心、喜剧故事与冒险探索驱动的公路旅行游戏。"
       }
@@ -75,12 +67,11 @@
   <div class="bg-blur blur-c"></div>
 
   <header class="nav-wrap">
-    <a class="brand" href="#top" aria-label="DETOUR Home">
-      <span class="brand-mark">D</span>
-      <span class="brand-word">DETOUR</span>
+    <a class="brand" href="#top" aria-label="Elsewhere Home">
+      <img src="assets/elsewhere-logo.png" alt="Elsewhere" class="brand-logo" />
     </a>
     <nav class="nav">
-      <a href="#game" data-i18n="nav_game">游戏</a>
+      <a href="#games" data-i18n="nav_games">游戏</a>
       <a href="#features" data-i18n="nav_features">特色</a>
       <a href="#journal" data-i18n="nav_journal">开发日志</a>
     </nav>
@@ -91,206 +82,97 @@
     <section class="hero">
       <div class="hero-grid"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow">DETOUR</p>
+        <p class="eyebrow">ELSEWHERE</p>
         <h1>
-          <span data-i18n="hero_title_main">拼豆！</span>
-          <span class="sub" data-i18n="hero_title_sub">A relaxing 3D fuse-bead game.</span>
+          <span data-i18n="hero_title">Games</span>
+          <span class="sub" data-i18n="hero_sub">Independent titles on Steam.</span>
         </h1>
         <p class="hero-text" data-i18n="hero_text">
-          挑选喜欢的图案，一颗一颗放下拼豆，完成、熨烫并收藏属于自己的作品。
+          查看《拼豆！》《漂流瓶盖》《沙雕之路》，以及后续新作与开发记录。
         </p>
         <div class="hero-actions">
-          <a class="button primary magnetic" href="#game" data-i18n="hero_cta_main">查看游戏</a>
+          <a class="button primary magnetic" href="#games" data-i18n="hero_cta_main">查看游戏</a>
           <a class="button ghost magnetic" href="#journal" data-i18n="hero_cta_secondary">查看开发日志</a>
         </div>
       </div>
 
       <div class="hero-showcase reveal delay-1">
-        <div class="glass-card hero-poster tilt-card">
-          <div class="poster-top">
-            <span>PIN DOU!</span>
-            <span>3D / RELAX</span>
-          </div>
-          <div class="bead-heart" id="beadHeart"></div>
-          <div class="poster-bottom">
-            <span data-i18n="poster_bottom_left">正在开发</span>
-            <span>DETOUR</span>
-          </div>
-        </div>
-        <div class="floating-badges">
-          <div class="badge badge-a">3D</div>
-          <div class="badge badge-b" data-i18n="badge_relax">轻松</div>
-          <div class="badge badge-c" data-i18n="badge_create">创作</div>
-          <div class="badge badge-d" data-i18n="badge_collect">收藏</div>
+        <div class="glass-card hero-logo-card tilt-card">
+          <img src="assets/elsewhere-logo.png" alt="Elsewhere" class="hero-logo-full" />
         </div>
       </div>
 
-      <a class="scroll-cue" href="#game" aria-label="Scroll to content"><span></span></a>
-
-    <section class="section steam-hero-section" id="steam">
-      <div class="section-head reveal steam-head">
-        <div>
-          <p class="eyebrow">STEAM</p>
-          <h2 data-i18n="steam_title_prominent">在 Steam 上查看《拼豆！》</h2>
-        </div>
-      </div>
-
-      <a class="steam-banner reveal" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer" aria-label="Open PIN DOU! on Steam">
-        <div class="steam-banner-art">
-          <div class="steam-banner-grid"></div>
-          <div class="steam-banner-title">拼豆！</div>
-          <div class="steam-banner-sub">PIN DOU!</div>
-          <div class="steam-banner-beads">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-          </div>
-        </div>
-
-        <div class="steam-banner-info">
-          <div class="steam-info-top">
-            <span class="steam-pill">STEAM</span>
-            <span class="steam-pill" data-i18n="steam_badge">愿望单 / 关注</span>
-          </div>
-
-          <p class="steam-banner-desc" data-i18n="steam_desc_prominent">
-            把《拼豆！》加入愿望单，或直接打开 Steam 商店页查看最新信息。
-          </p>
-
-          <div class="steam-banner-tags">
-            <span data-i18n="tag_cozy">轻松</span>
-            <span data-i18n="tag_creative">创作</span>
-            <span>3D</span>
-            <span data-i18n="tag_casual">休闲</span>
-          </div>
-
-          <div class="steam-banner-meta">
-            <div>
-              <span data-i18n="steam_metric_platform">平台</span>
-              <b>PC / STEAM</b>
-            </div>
-            <div>
-              <span data-i18n="steam_metric_status">状态</span>
-              <b data-i18n="steam_metric_status_val">开发中</b>
-            </div>
-          </div>
-
-          <div class="steam-banner-action">
-            <span class="steam-banner-button" data-i18n="steam_open_main">打开 Steam 商店页</span>
-            <span class="steam-banner-hint" data-i18n="steam_open_hint">点击整张卡片即可跳转</span>
-          </div>
-        </div>
-      </a>
+      <a class="scroll-cue" href="#games" aria-label="Scroll to content"><span></span></a>
     </section>
 
-</section>
-
-    <section class="section game-section" id="game">
+    <section class="section games" id="games">
       <div class="section-head reveal">
         <div>
-          <p class="eyebrow" data-i18n="game_kicker">CURRENT GAME</p>
-          <h2 data-i18n="game_title">轻松治愈的<br/>3D 拼豆游戏</h2>
+          <p class="eyebrow" data-i18n="games_kicker">GAMES</p>
+          <h2 data-i18n="games_title">游戏作品</h2>
         </div>
       </div>
 
-      <article class="game-card reveal">
-        <div class="game-visual tilt-card">
-          <div class="visual-grid"></div>
-          <div class="large-cn">拼豆！</div>
-          <div class="visual-beads" id="visualBeads"></div>
-          <div class="visual-panel">
-            <div class="panel-line"><span data-i18n="panel_line_1a">挑选图案</span><b>01</b></div>
-            <div class="panel-line"><span data-i18n="panel_line_2a">放下拼豆</span><b>02</b></div>
-            <div class="panel-line"><span data-i18n="panel_line_3a">完成熨烫</span><b>03</b></div>
-          </div>
-        </div>
-        <div class="game-info">
-          <div>
-            <p class="eyebrow">PIN DOU!</p>
-            <h3 data-i18n="game_info_title">拼豆！</h3>
-            <p class="game-desc" data-i18n="game_desc">
-              选择游戏准备好的图案，也可以上传自己喜欢的图片，将它转换成可以实际制作的拼豆图纸。
-            </p>
-            <p class="game-desc" data-i18n="game_desc_2">
-              宠物、角色、像素画、照片，或者任何你想拼出来的东西，都可以成为新的作品。
-            </p>
-          </div>
-
-          <div class="game-meta">
-            <div><span data-i18n="meta_status">状态</span><b data-i18n="meta_status_val">开发中</b></div>
-            <div><span data-i18n="meta_platform">平台</span><b>PC / STEAM</b></div>
-            <div><span data-i18n="meta_genre">类型</span><b data-i18n="meta_genre_val">休闲 / 创作 / 治愈</b></div>
-          </div>
-
-          <div class="button-row">
-            <a class="button primary magnetic" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer" data-i18n="steam_open">打开 Steam 商店页</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-
-    <section class="section catalog" id="catalog">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow" data-i18n="catalog_kicker">GAMES</p>
-          <h2 data-i18n="catalog_title">更多游戏</h2>
-        </div>
-      </div>
-
-      <div class="catalog-grid">
-        <a class="catalog-card catalog-water reveal" href="https://store.steampowered.com/app/2827310/" target="_blank" rel="noopener noreferrer">
-          <div class="catalog-image">
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827310/ss_b8882fa0717e10d24846250831911ff6f9b6fe3b.1920x1080.jpg?t=1713495659"
-                 alt="漂流瓶盖 Drifting Bottle Cap 游戏画面"
-                 loading="lazy" />
-            <div class="catalog-overlay"></div>
-            <span class="catalog-year">2024</span>
-          </div>
-          <div class="catalog-body">
-            <div class="catalog-topline">
-              <span>STEAM / 2827310</span>
-              <span class="catalog-arrow">↗</span>
+      <div class="games-grid">
+        <a class="game-card game-card-pindou reveal" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer">
+          <div class="game-visual game-visual-pindou">
+            <div class="grid-overlay"></div>
+            <div class="title-cn">拼豆！</div>
+            <div class="title-en">PIN DOU!</div>
+            <div class="beads">
+              <span></span><span></span><span></span><span></span><span></span>
             </div>
-            <h3>漂流瓶盖</h3>
-            <p class="catalog-en">DRIFTING BOTTLE CAP</p>
-            <p class="catalog-desc" data-i18n="bottle_desc">选择一个瓶盖，看它在水流与各种场景中和其他瓶盖比赛。轻松、物理模拟，也有一点完全交给运气的紧张感。</p>
-            <div class="catalog-tags">
-              <span data-i18n="bottle_tag1">休闲</span>
-              <span data-i18n="bottle_tag2">竞速</span>
-              <span data-i18n="bottle_tag3">物理</span>
+          </div>
+          <div class="game-body">
+            <div class="game-topline"><span>STEAM / 5177970</span><span class="arrow">↗</span></div>
+            <h3 data-i18n="g1_title">拼豆！</h3>
+            <p class="subtitle">PIN DOU!</p>
+            <p class="desc" data-i18n="g1_desc">一款轻松治愈的 3D 拼豆游戏。挑选图案、放下拼豆、完成熨烫并收藏作品，也可以上传自己的图片制作拼豆图纸。</p>
+            <div class="tags">
+              <span data-i18n="g1_tag1">轻松</span>
+              <span data-i18n="g1_tag2">创作</span>
               <span>3D</span>
-            </div>
-            <div class="catalog-meta">
-              <span data-i18n="released">发行</span>
-              <b data-i18n="bottle_date">2024 年 3 月 29 日</b>
+              <span data-i18n="g1_tag3">治愈</span>
             </div>
           </div>
         </a>
 
-        <a class="catalog-card catalog-road reveal delay-1" href="https://store.steampowered.com/app/1092590/" target="_blank" rel="noopener noreferrer">
-          <div class="catalog-image">
+        <a class="game-card reveal delay-1" href="https://store.steampowered.com/app/2827310/" target="_blank" rel="noopener noreferrer">
+          <div class="game-visual image-visual">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827310/ss_b8882fa0717e10d24846250831911ff6f9b6fe3b.1920x1080.jpg?t=1713495659"
+                 alt="漂流瓶盖 Drifting Bottle Cap 游戏画面"
+                 loading="lazy" />
+          </div>
+          <div class="game-body">
+            <div class="game-topline"><span>STEAM / 2827310</span><span class="arrow">↗</span></div>
+            <h3 data-i18n="g2_title">漂流瓶盖</h3>
+            <p class="subtitle">DRIFTING BOTTLE CAP</p>
+            <p class="desc" data-i18n="g2_desc">选择一个瓶盖，看它在水流与各种场景中和其他瓶盖比赛。轻松、物理模拟，也有一点完全交给运气的紧张感。</p>
+            <div class="tags">
+              <span data-i18n="g2_tag1">休闲</span>
+              <span data-i18n="g2_tag2">竞速</span>
+              <span data-i18n="g2_tag3">物理</span>
+              <span>3D</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="game-card reveal" href="https://store.steampowered.com/app/1092590/" target="_blank" rel="noopener noreferrer">
+          <div class="game-visual image-visual">
             <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092590/header_schinese.jpg?t=1781012993"
                  alt="沙雕之路 Steam 商店图"
                  loading="lazy" />
-            <div class="catalog-overlay"></div>
-            <span class="catalog-year">2019</span>
           </div>
-          <div class="catalog-body">
-            <div class="catalog-topline">
-              <span>STEAM / 1092590</span>
-              <span class="catalog-arrow">↗</span>
-            </div>
-            <h3>沙雕之路</h3>
-            <p class="catalog-en">ROAD OF ABSURDITY</p>
-            <p class="catalog-desc" data-i18n="road_desc">为了买一份海蜇出门，结果一路穿过沙雕大陆与多个次元。以好奇心、喜剧故事和冒险探索驱动的公路旅行。</p>
-            <div class="catalog-tags">
-              <span data-i18n="road_tag1">冒险</span>
-              <span data-i18n="road_tag2">角色扮演</span>
-              <span data-i18n="road_tag3">欢乐</span>
-              <span data-i18n="road_tag4">探索</span>
-            </div>
-            <div class="catalog-meta">
-              <span data-i18n="released">发行</span>
-              <b data-i18n="road_date">2019 年 10 月 30 日</b>
+          <div class="game-body">
+            <div class="game-topline"><span>STEAM / 1092590</span><span class="arrow">↗</span></div>
+            <h3 data-i18n="g3_title">沙雕之路</h3>
+            <p class="subtitle">ROAD OF ABSURDITY</p>
+            <p class="desc" data-i18n="g3_desc">为了买一份海蜇出门，结果一路穿过沙雕大陆与多个次元。以好奇心、喜剧故事和冒险探索驱动的公路旅行。</p>
+            <div class="tags">
+              <span data-i18n="g3_tag1">冒险</span>
+              <span data-i18n="g3_tag2">角色扮演</span>
+              <span data-i18n="g3_tag3">欢乐</span>
+              <span data-i18n="g3_tag4">探索</span>
             </div>
           </div>
         </a>
@@ -301,34 +183,33 @@
       <div class="section-head reveal">
         <div>
           <p class="eyebrow" data-i18n="features_kicker">FEATURES</p>
-          <h2 data-i18n="features_title">舒服地摆，<br/>慢慢地完成。</h2>
+          <h2 data-i18n="features_title">三个游戏，<br/>同等展示。</h2>
         </div>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card reveal">
           <span class="feature-no">01</span>
-          <h3 data-i18n="f1_title">真正立体的制作过程</h3>
-          <p data-i18n="f1_body">完整 3D 场景中制作拼豆，看着一颗颗立体小豆子慢慢组成完整图案。</p>
+          <h3 data-i18n="f1_title">直接进入 Steam</h3>
+          <p data-i18n="f1_body">三张游戏卡片都可以整张点击，直接打开各自的 Steam 商店页面。</p>
         </article>
         <article class="feature-card reveal delay-1">
           <span class="feature-no">02</span>
-          <h3 data-i18n="f2_title">自由上传图片</h3>
-          <p data-i18n="f2_body">把自己喜欢的图片转换成拼豆图纸，做宠物、角色、照片或像素画。</p>
+          <h3 data-i18n="f2_title">统一展示结构</h3>
+          <p data-i18n="f2_body">不再让某一款游戏压过其他作品，三款游戏都按同等分量展示。</p>
         </article>
         <article class="feature-card reveal">
           <span class="feature-no">03</span>
-          <h3 data-i18n="f3_title">完成后熨烫与展示</h3>
-          <p data-i18n="f3_body">作品完成后进入熨烫环节，再把它挂起来收藏，慢慢填满你的展示空间。</p>
+          <h3 data-i18n="f3_title">轻量而清楚</h3>
+          <p data-i18n="f3_body">保留清爽配色和动效，同时让页面信息更直接，更像一个真正的作品主页。</p>
         </article>
         <article class="feature-card reveal delay-1">
           <span class="feature-no">04</span>
-          <h3 data-i18n="f4_title">轻松安静的节奏</h3>
-          <p data-i18n="f4_body">不追求紧张压力，只专注于舒服的操作、清晰的反馈和完成作品的满足感。</p>
+          <h3 data-i18n="f4_title">持续更新</h3>
+          <p data-i18n="f4_body">开发日志区域会继续保留，后续可以继续往里面补充新内容和新游戏。</p>
         </article>
       </div>
     </section>
-
 
     <section class="section journal" id="journal">
       <div class="section-head reveal">
@@ -341,16 +222,16 @@
         <article class="journal-row reveal">
           <span class="journal-date">2026.08</span>
           <div>
-            <h3 data-i18n="j1_title">DETOUR 官网上线</h3>
-            <p data-i18n="j1_body">先把《拼豆！》的内容整理到一个公开页面里，后续会继续更新。</p>
+            <h3 data-i18n="j1_title">Elsewhere 网站整理中</h3>
+            <p data-i18n="j1_body">调整为更清楚的游戏主页结构，统一展示当前作品与开发记录。</p>
           </div>
           <span class="journal-arrow">↗</span>
         </article>
         <article class="journal-row reveal">
           <span class="journal-date">2026</span>
           <div>
-            <h3 data-i18n="j2_title">《拼豆！》持续开发中</h3>
-            <p data-i18n="j2_body">核心制作流程、作品收藏和更多内容会在这里持续记录。</p>
+            <h3 data-i18n="j2_title">三款游戏已加入主页</h3>
+            <p data-i18n="j2_body">《拼豆！》《漂流瓶盖》《沙雕之路》现在都可以从主页直接进入 Steam 页面。</p>
           </div>
           <span class="journal-arrow">↗</span>
         </article>
@@ -359,21 +240,21 @@
 
     <section class="closing">
       <div class="closing-card reveal tilt-card">
-        <p class="eyebrow">DETOUR</p>
-        <h2 data-i18n="closing_title">拼豆！</h2>
-        <p data-i18n="closing_text">一款轻松治愈的 3D 拼豆游戏。</p>
+        <p class="eyebrow">ELSEWHERE</p>
+        <h2 data-i18n="closing_title">Elsewhere</h2>
+        <p data-i18n="closing_text">Games on Steam, with room for more.</p>
         <a class="button ghost magnetic" href="#top" data-i18n="back_top">回到顶部</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>© 2026 DETOUR</div>
+    <div>© 2026 Elsewhere</div>
     <div class="footer-links">
-      <a href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer">STEAM</a>
+      <a href="#games" data-i18n="nav_games_footer">游戏</a>
       <a href="#journal" data-i18n="nav_journal_footer">开发日志</a>
     </div>
-    <div>PIN DOU!</div>
+    <div>Elsewhere</div>
   </footer>
 
   <script src="script.js"></script>
