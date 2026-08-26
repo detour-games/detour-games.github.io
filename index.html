@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b0d10" />
-  <meta name="description" content="DETOUR — Independent game studio. Small games, strange detours." />
-  <title>DETOUR — Independent Game Studio</title>
+  <meta name="theme-color" content="#f6fbff" />
+  <meta name="description" content="DETOUR —《拼豆！》开发中。一款轻松治愈的 3D 拼豆游戏。" />
+  <title>DETOUR — 拼豆！</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="cursorTrail" aria-hidden="true"></canvas>
   <div class="noise"></div>
+  <div class="bg-blur blur-a"></div>
+  <div class="bg-blur blur-b"></div>
+  <div class="bg-blur blur-c"></div>
 
   <header class="nav-wrap">
     <a class="brand" href="#top" aria-label="DETOUR Home">
@@ -18,118 +22,151 @@
       <span class="brand-word">DETOUR</span>
     </a>
     <nav class="nav">
-      <a href="#games" data-i18n="nav_games">Games</a>
-      <a href="#studio" data-i18n="nav_studio">Studio</a>
-      <a href="#journal" data-i18n="nav_journal">Journal</a>
+      <a href="#game" data-i18n="nav_game">游戏</a>
+      <a href="#features" data-i18n="nav_features">特色</a>
+      <a href="#journal" data-i18n="nav_journal">开发日志</a>
     </nav>
-    <button class="lang" id="langButton" aria-label="Switch language">中 / EN</button>
+    <button class="lang" id="langButton" aria-label="Switch language">EN / 中</button>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-orbit orbit-a"></div>
-      <div class="hero-orbit orbit-b"></div>
       <div class="hero-grid"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow" data-i18n="hero_kicker">INDEPENDENT GAME STUDIO</p>
+        <p class="eyebrow">DETOUR</p>
         <h1>
-          <span>TAKE</span>
-          <span>THE</span>
-          <span class="accent-word">DETOUR.</span>
+          <span data-i18n="hero_title_main">拼豆！</span>
+          <span class="sub" data-i18n="hero_title_sub">A relaxing 3D fuse-bead game.</span>
         </h1>
         <p class="hero-text" data-i18n="hero_text">
-          We make playful, tactile games about small obsessions, quiet moments, and unexpected turns.
+          挑选喜欢的图案，一颗一颗放下拼豆，完成、熨烫并收藏属于自己的作品。
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#games" data-i18n="hero_cta">See our games</a>
-          <a class="button ghost" href="#studio" data-i18n="hero_about">About DETOUR</a>
+          <a class="button primary magnetic" href="#game" data-i18n="hero_cta_main">查看游戏</a>
+          <a class="button ghost magnetic" href="#journal" data-i18n="hero_cta_secondary">查看开发日志</a>
         </div>
       </div>
-      <div class="hero-card reveal delay-1" aria-hidden="true">
-        <div class="mini-label">DETOUR / 001</div>
-        <div class="bead-heart" id="beadHeart"></div>
-        <div class="mini-meta">
-          <span>PIN DOU!</span>
-          <span>2026</span>
+
+      <div class="hero-showcase reveal delay-1">
+        <div class="glass-card hero-poster tilt-card">
+          <div class="poster-top">
+            <span>PIN DOU!</span>
+            <span>3D / RELAX</span>
+          </div>
+          <div class="bead-heart" id="beadHeart"></div>
+          <div class="poster-bottom">
+            <span data-i18n="poster_bottom_left">正在开发</span>
+            <span>DETOUR</span>
+          </div>
+        </div>
+        <div class="floating-badges">
+          <div class="badge badge-a">3D</div>
+          <div class="badge badge-b" data-i18n="badge_relax">轻松</div>
+          <div class="badge badge-c" data-i18n="badge_create">创作</div>
+          <div class="badge badge-d" data-i18n="badge_collect">收藏</div>
         </div>
       </div>
-      <a class="scroll-cue" href="#games" aria-label="Scroll to games"><span></span></a>
+
+      <a class="scroll-cue" href="#game" aria-label="Scroll to content"><span></span></a>
     </section>
 
-    <section class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <span>DETOUR</span><i>✦</i><span>PLAYFUL OBJECTS</span><i>✦</i><span>SMALL WORLDS</span><i>✦</i>
-        <span>DETOUR</span><i>✦</i><span>PLAYFUL OBJECTS</span><i>✦</i><span>SMALL WORLDS</span><i>✦</i>
-      </div>
-    </section>
-
-    <section class="section games" id="games">
+    <section class="section game-section" id="game">
       <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="games_kicker">SELECTED GAME</p>
-        <h2 data-i18n="games_title">One small thing,<br/>made with care.</h2>
+        <div>
+          <p class="eyebrow" data-i18n="game_kicker">CURRENT GAME</p>
+          <h2 data-i18n="game_title">轻松治愈的<br/>3D 拼豆游戏</h2>
+        </div>
       </div>
 
       <article class="game-card reveal">
-        <div class="game-visual">
-          <div class="game-grid"></div>
-          <div class="game-title-cn">拼豆！</div>
-          <div class="float-chip chip-a">3D</div>
-          <div class="float-chip chip-b">RELAX</div>
-          <div class="float-chip chip-c">CREATE</div>
-          <div class="beads-cloud" id="beadsCloud"></div>
+        <div class="game-visual tilt-card">
+          <div class="visual-grid"></div>
+          <div class="large-cn">拼豆！</div>
+          <div class="visual-beads" id="visualBeads"></div>
+          <div class="visual-panel">
+            <div class="panel-line"><span data-i18n="panel_line_1a">挑选图案</span><b>01</b></div>
+            <div class="panel-line"><span data-i18n="panel_line_2a">放下拼豆</span><b>02</b></div>
+            <div class="panel-line"><span data-i18n="panel_line_3a">完成熨烫</span><b>03</b></div>
+          </div>
         </div>
         <div class="game-info">
           <div>
-            <p class="eyebrow">01 / PIN DOU!</p>
-            <h3 data-i18n="pindou_title">拼豆！</h3>
-            <p class="game-desc" data-i18n="pindou_desc">
-              A relaxing 3D fuse-bead game. Pick a pattern, place each bead, iron the finished piece, and build a collection of your own.
+            <p class="eyebrow">PIN DOU!</p>
+            <h3 data-i18n="game_info_title">拼豆！</h3>
+            <p class="game-desc" data-i18n="game_desc">
+              选择游戏准备好的图案，也可以上传自己喜欢的图片，将它转换成可以实际制作的拼豆图纸。
+            </p>
+            <p class="game-desc" data-i18n="game_desc_2">
+              宠物、角色、像素画、照片，或者任何你想拼出来的东西，都可以成为新的作品。
             </p>
           </div>
+
           <div class="game-meta">
-            <div><span data-i18n="meta_status">STATUS</span><b data-i18n="meta_status_value">IN DEVELOPMENT</b></div>
-            <div><span data-i18n="meta_platform">PLATFORM</span><b>PC / STEAM</b></div>
+            <div><span data-i18n="meta_status">状态</span><b data-i18n="meta_status_val">开发中</b></div>
+            <div><span data-i18n="meta_platform">平台</span><b>PC / STEAM</b></div>
+            <div><span data-i18n="meta_genre">类型</span><b data-i18n="meta_genre_val">休闲 / 创作 / 治愈</b></div>
           </div>
-          <a class="button primary disabled" href="#" aria-disabled="true" data-i18n="steam_soon">Steam page — soon</a>
+
+          <div class="button-row">
+            <a class="button primary disabled" href="#" aria-disabled="true" data-i18n="steam_soon">Steam 商店页 — 即将上线</a>
+          </div>
         </div>
       </article>
     </section>
 
-    <section class="section studio" id="studio">
-      <div class="studio-number reveal">D</div>
-      <div class="studio-copy reveal">
-        <p class="eyebrow" data-i18n="studio_kicker">ABOUT THE STUDIO</p>
-        <h2 data-i18n="studio_title">Games worth<br/>taking a detour for.</h2>
-        <p data-i18n="studio_body">
-          DETOUR is an independent game development label focused on clear ideas, tactile interaction and memorable little worlds.
-        </p>
+    <section class="section features" id="features">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="features_kicker">FEATURES</p>
+          <h2 data-i18n="features_title">舒服地摆，<br/>慢慢地完成。</h2>
+        </div>
       </div>
-      <div class="principles reveal">
-        <div><span>01</span><b data-i18n="p1">Simple to enter.</b></div>
-        <div><span>02</span><b data-i18n="p2">Pleasant to touch.</b></div>
-        <div><span>03</span><b data-i18n="p3">Hard to forget.</b></div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-no">01</span>
+          <h3 data-i18n="f1_title">真正立体的制作过程</h3>
+          <p data-i18n="f1_body">完整 3D 场景中制作拼豆，看着一颗颗立体小豆子慢慢组成完整图案。</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <span class="feature-no">02</span>
+          <h3 data-i18n="f2_title">自由上传图片</h3>
+          <p data-i18n="f2_body">把自己喜欢的图片转换成拼豆图纸，做宠物、角色、照片或像素画。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-no">03</span>
+          <h3 data-i18n="f3_title">完成后熨烫与展示</h3>
+          <p data-i18n="f3_body">作品完成后进入熨烫环节，再把它挂起来收藏，慢慢填满你的展示空间。</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <span class="feature-no">04</span>
+          <h3 data-i18n="f4_title">轻松安静的节奏</h3>
+          <p data-i18n="f4_body">不追求紧张压力，只专注于舒服的操作、清晰的反馈和完成作品的满足感。</p>
+        </article>
       </div>
     </section>
 
     <section class="section journal" id="journal">
       <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="journal_kicker">DEV JOURNAL</p>
-        <h2 data-i18n="journal_title">Notes from<br/>the side road.</h2>
+        <div>
+          <p class="eyebrow" data-i18n="journal_kicker">DEV JOURNAL</p>
+          <h2 data-i18n="journal_title">开发日志</h2>
+        </div>
       </div>
       <div class="journal-list">
         <article class="journal-row reveal">
           <span class="journal-date">2026.08</span>
           <div>
-            <h3 data-i18n="j1_title">DETOUR is taking shape.</h3>
-            <p data-i18n="j1_body">A small home for our games, experiments and work in progress.</p>
+            <h3 data-i18n="j1_title">DETOUR 官网上线</h3>
+            <p data-i18n="j1_body">先把《拼豆！》的内容整理到一个公开页面里，后续会继续更新。</p>
           </div>
           <span class="journal-arrow">↗</span>
         </article>
         <article class="journal-row reveal">
           <span class="journal-date">2026</span>
           <div>
-            <h3 data-i18n="j2_title">PIN DOU! is in development.</h3>
-            <p data-i18n="j2_body">A tactile 3D game about placing tiny beads one by one.</p>
+            <h3 data-i18n="j2_title">《拼豆！》持续开发中</h3>
+            <p data-i18n="j2_body">核心制作流程、作品收藏和更多内容会在这里持续记录。</p>
           </div>
           <span class="journal-arrow">↗</span>
         </article>
@@ -137,12 +174,12 @@
     </section>
 
     <section class="closing">
-      <div class="closing-copy reveal">
-        <p class="eyebrow" data-i18n="closing_kicker">STAY ON THE SIDE ROAD</p>
-        <h2>DETOUR</h2>
-        <p data-i18n="closing_text">Independent games, made somewhere off the main road.</p>
+      <div class="closing-card reveal tilt-card">
+        <p class="eyebrow">DETOUR</p>
+        <h2 data-i18n="closing_title">拼豆！</h2>
+        <p data-i18n="closing_text">一款轻松治愈的 3D 拼豆游戏。</p>
+        <a class="button ghost magnetic" href="#top" data-i18n="back_top">回到顶部</a>
       </div>
-      <div class="closing-ring"></div>
     </section>
   </main>
 
@@ -150,9 +187,9 @@
     <div>© 2026 DETOUR</div>
     <div class="footer-links">
       <a href="#" aria-disabled="true">STEAM</a>
-      <a href="#" aria-disabled="true">CONTACT</a>
+      <a href="#journal" data-i18n="nav_journal_footer">开发日志</a>
     </div>
-    <div>INDEPENDENT GAME STUDIO</div>
+    <div>PIN DOU!</div>
   </footer>
 
   <script src="script.js"></script>
