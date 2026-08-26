@@ -1,3 +1,3 @@
 # DETOUR
 
-Official website for DETOUR / PIN DOU!.
+Official game website.
