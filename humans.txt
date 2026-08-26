@@ -1,0 +1,8 @@
+DETOUR
+Independent game development.
+
+Current game:
+PIN DOU! / 拼豆！
+
+Website:
+https://detour-games.github.io/

@@ -4,10 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#f6fbff" />
-  <meta name="description" content="DETOUR —《拼豆！》开发中。一款轻松治愈的 3D 拼豆游戏。" />
-  <title>DETOUR — 拼豆！</title>
+  <meta name="description" content="《拼豆！》是一款轻松治愈的 3D 拼豆游戏。挑选图案、放下拼豆、完成熨烫并收藏作品，也可以上传自己的图片制作拼豆图纸。" />
+  <meta name="keywords" content="拼豆, 拼豆游戏, 3D拼豆, fuse beads, perler beads, indie game, independent game, DETOUR, Steam, cozy game, creative game" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="DETOUR" />
+
+  <link rel="canonical" href="https://detour-games.github.io/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DETOUR" />
+  <meta property="og:title" content="DETOUR — 拼豆！" />
+  <meta property="og:description" content="《拼豆！》是一款轻松治愈的 3D 拼豆游戏。挑选图案、放下拼豆、完成熨烫并收藏属于自己的作品。" />
+  <meta property="og:url" content="https://detour-games.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DETOUR — 拼豆！" />
+  <meta name="twitter:description" content="一款轻松治愈的 3D 拼豆游戏。" />
+
+  <title>DETOUR — 拼豆！ | 3D 拼豆游戏</title>
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "拼豆！",
+    "alternateName": "PIN DOU!",
+    "url": "https://detour-games.github.io/",
+    "sameAs": [
+      "https://store.steampowered.com/app/5177970/"
+    ],
+    "gamePlatform": "PC",
+    "operatingSystem": "Windows",
+    "applicationCategory": "Game",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DETOUR",
+      "url": "https://detour-games.github.io/"
+    },
+    "description": "一款轻松治愈的 3D 拼豆游戏。挑选图案，一颗一颗放下拼豆，完成、熨烫并收藏属于自己的作品，也可以上传自己的图片制作拼豆图纸。"
+  }
+  </script>
 </head>
 <body>
   <canvas id="cursorTrail" aria-hidden="true"></canvas>
@@ -108,7 +147,7 @@
           </div>
 
           <div class="button-row">
-            <a class="button primary disabled" href="#" aria-disabled="true" data-i18n="steam_soon">Steam 商店页 — 即将上线</a>
+            <a class="button primary magnetic" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer" data-i18n="steam_open">打开 Steam 商店页</a>
           </div>
         </div>
       </article>
@@ -143,6 +182,33 @@
           <h3 data-i18n="f4_title">轻松安静的节奏</h3>
           <p data-i18n="f4_body">不追求紧张压力，只专注于舒服的操作、清晰的反馈和完成作品的满足感。</p>
         </article>
+      </div>
+    </section>
+
+
+    <section class="section steam-section" id="steam">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">STEAM</p>
+          <h2 data-i18n="steam_title">在 Steam 上查看<br/>《拼豆！》</h2>
+        </div>
+      </div>
+
+      <div class="steam-card reveal">
+        <div class="steam-widget-wrap">
+          <iframe
+            src="https://store.steampowered.com/widget/5177970/"
+            frameborder="0"
+            width="646"
+            height="190"
+            loading="lazy"
+            title="《拼豆！》Steam 商店组件">
+          </iframe>
+        </div>
+        <div class="steam-fallback">
+          <p data-i18n="steam_fallback">如果 Steam 小组件没有正常加载，也可以直接打开商店页面。</p>
+          <a class="button primary magnetic" href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer" data-i18n="steam_open">打开 Steam 商店页</a>
+        </div>
       </div>
     </section>
 
@@ -186,7 +252,7 @@
   <footer>
     <div>© 2026 DETOUR</div>
     <div class="footer-links">
-      <a href="#" aria-disabled="true">STEAM</a>
+      <a href="https://store.steampowered.com/app/5177970/" target="_blank" rel="noopener noreferrer">STEAM</a>
       <a href="#journal" data-i18n="nav_journal_footer">开发日志</a>
     </div>
     <div>PIN DOU!</div>
