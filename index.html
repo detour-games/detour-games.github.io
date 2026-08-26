@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="description" content="DETOUR — Independent game studio. Small games, strange detours." />
+  <title>DETOUR — Independent Game Studio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav-wrap">
+    <a class="brand" href="#top" aria-label="DETOUR Home">
+      <span class="brand-mark">D</span>
+      <span class="brand-word">DETOUR</span>
+    </a>
+    <nav class="nav">
+      <a href="#games" data-i18n="nav_games">Games</a>
+      <a href="#studio" data-i18n="nav_studio">Studio</a>
+      <a href="#journal" data-i18n="nav_journal">Journal</a>
+    </nav>
+    <button class="lang" id="langButton" aria-label="Switch language">中 / EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orbit orbit-a"></div>
+      <div class="hero-orbit orbit-b"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="hero_kicker">INDEPENDENT GAME STUDIO</p>
+        <h1>
+          <span>TAKE</span>
+          <span>THE</span>
+          <span class="accent-word">DETOUR.</span>
+        </h1>
+        <p class="hero-text" data-i18n="hero_text">
+          We make playful, tactile games about small obsessions, quiet moments, and unexpected turns.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#games" data-i18n="hero_cta">See our games</a>
+          <a class="button ghost" href="#studio" data-i18n="hero_about">About DETOUR</a>
+        </div>
+      </div>
+      <div class="hero-card reveal delay-1" aria-hidden="true">
+        <div class="mini-label">DETOUR / 001</div>
+        <div class="bead-heart" id="beadHeart"></div>
+        <div class="mini-meta">
+          <span>PIN DOU!</span>
+          <span>2026</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#games" aria-label="Scroll to games"><span></span></a>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>DETOUR</span><i>✦</i><span>PLAYFUL OBJECTS</span><i>✦</i><span>SMALL WORLDS</span><i>✦</i>
+        <span>DETOUR</span><i>✦</i><span>PLAYFUL OBJECTS</span><i>✦</i><span>SMALL WORLDS</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section games" id="games">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="games_kicker">SELECTED GAME</p>
+        <h2 data-i18n="games_title">One small thing,<br/>made with care.</h2>
+      </div>
+
+      <article class="game-card reveal">
+        <div class="game-visual">
+          <div class="game-grid"></div>
+          <div class="game-title-cn">拼豆！</div>
+          <div class="float-chip chip-a">3D</div>
+          <div class="float-chip chip-b">RELAX</div>
+          <div class="float-chip chip-c">CREATE</div>
+          <div class="beads-cloud" id="beadsCloud"></div>
+        </div>
+        <div class="game-info">
+          <div>
+            <p class="eyebrow">01 / PIN DOU!</p>
+            <h3 data-i18n="pindou_title">拼豆！</h3>
+            <p class="game-desc" data-i18n="pindou_desc">
+              A relaxing 3D fuse-bead game. Pick a pattern, place each bead, iron the finished piece, and build a collection of your own.
+            </p>
+          </div>
+          <div class="game-meta">
+            <div><span data-i18n="meta_status">STATUS</span><b data-i18n="meta_status_value">IN DEVELOPMENT</b></div>
+            <div><span data-i18n="meta_platform">PLATFORM</span><b>PC / STEAM</b></div>
+          </div>
+          <a class="button primary disabled" href="#" aria-disabled="true" data-i18n="steam_soon">Steam page — soon</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section studio" id="studio">
+      <div class="studio-number reveal">D</div>
+      <div class="studio-copy reveal">
+        <p class="eyebrow" data-i18n="studio_kicker">ABOUT THE STUDIO</p>
+        <h2 data-i18n="studio_title">Games worth<br/>taking a detour for.</h2>
+        <p data-i18n="studio_body">
+          DETOUR is an independent game development label focused on clear ideas, tactile interaction and memorable little worlds.
+        </p>
+      </div>
+      <div class="principles reveal">
+        <div><span>01</span><b data-i18n="p1">Simple to enter.</b></div>
+        <div><span>02</span><b data-i18n="p2">Pleasant to touch.</b></div>
+        <div><span>03</span><b data-i18n="p3">Hard to forget.</b></div>
+      </div>
+    </section>
+
+    <section class="section journal" id="journal">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="journal_kicker">DEV JOURNAL</p>
+        <h2 data-i18n="journal_title">Notes from<br/>the side road.</h2>
+      </div>
+      <div class="journal-list">
+        <article class="journal-row reveal">
+          <span class="journal-date">2026.08</span>
+          <div>
+            <h3 data-i18n="j1_title">DETOUR is taking shape.</h3>
+            <p data-i18n="j1_body">A small home for our games, experiments and work in progress.</p>
+          </div>
+          <span class="journal-arrow">↗</span>
+        </article>
+        <article class="journal-row reveal">
+          <span class="journal-date">2026</span>
+          <div>
+            <h3 data-i18n="j2_title">PIN DOU! is in development.</h3>
+            <p data-i18n="j2_body">A tactile 3D game about placing tiny beads one by one.</p>
+          </div>
+          <span class="journal-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-copy reveal">
+        <p class="eyebrow" data-i18n="closing_kicker">STAY ON THE SIDE ROAD</p>
+        <h2>DETOUR</h2>
+        <p data-i18n="closing_text">Independent games, made somewhere off the main road.</p>
+      </div>
+      <div class="closing-ring"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 DETOUR</div>
+    <div class="footer-links">
+      <a href="#" aria-disabled="true">STEAM</a>
+      <a href="#" aria-disabled="true">CONTACT</a>
+    </div>
+    <div>INDEPENDENT GAME STUDIO</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
